@@ -1,0 +1,19 @@
+EJERCICIO 1
+
+se ubica en el directorio que en mi caso es: C:\Users\LENOVO\Videos\CSB-master\CSB-master\unix\data\Saavedra2013
+para conocer el numero de filas en el archivo "n1.txt" el codigo es: wc -l n1.txt ----- aqui esta delimitando el conteo de filas para el archivo n1.txt
+---- al correr el codigo salta la respuesta = 97 n1.txt = ----
+para conocer el numero de columnas en el archivo "n1.txt" el codigo es: head -1 | grep -o " " | wc-l____ este codigo quiere decir que va a contar desde la primera fila reconociendo un espacio que separa a cada caracter y al final se le da la orden de contar 
+---- al correr el codigo salta la respuesta = 80 n1.txt = ----
+
+ambas son correctas
+--EN--
+nano netside.sh= 
+
+echo "deber bionformatica ejc1 :"
+echo $1
+echo "Numbero de filas:"
+cat $1 | wc -l n1.txt
+echo "Numbero de columnas:"
+head -n 1 n1.txt | grep -o " " | wc -l
+
